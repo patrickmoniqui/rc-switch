@@ -668,7 +668,7 @@ bool RCSwitch::receiveProtocol(const int p, unsigned int changeCount) {
     return false;
 }
 
-void RECEIVE_ATTR RCSwitch::handleInterrupt() {
+void RCSwitch::handleInterrupt() {
 
   static unsigned int changeCount = 0;
   static unsigned long lastTime = 0;
